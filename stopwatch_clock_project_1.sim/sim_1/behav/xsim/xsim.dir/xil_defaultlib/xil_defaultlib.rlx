@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sim_1/imports/new/tb_top.v,1734312308,verilog,,,,tb_top,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/control_unit.v,1734103484,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/debouncer.v,,control_unit,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/debouncer.v,1734312966,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/fnd_controller.v,,debounce,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/fnd_controller.v,1734312967,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/stop_watch.v,,clk_div_1000Hz;counter_4;decoder_2X4;digit_splitter_hour;digit_splitter_min;digit_splitter_msec;digit_splitter_sec;digit_splitter_stop_watch;fnd_controller;fnd_font;mux_12X1,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/stop_watch.v,1734312967,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/time_counter.v,,clk_div_10Hz;counter_100ms;stop_watch,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/time_counter.v,1734312679,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/top_module.v,,counter_hour;counter_min;counter_msec;counter_sec;tick_msec;time_counter,,,,,,,,
+D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sources_1/imports/new/top_module.v,1734309872,verilog,,D:/project/verilog/stopwatch_clock_project_1/stopwatch_clock_project_1.srcs/sim_1/imports/new/tb_top.v,,top_module,,,,,,,,

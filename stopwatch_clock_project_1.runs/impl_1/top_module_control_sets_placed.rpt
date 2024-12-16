@@ -1,0 +1,90 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Dec 16 09:22:59 2024
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             159 |           42 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            4 |
+| Yes          | No                    | Yes                    |              18 |            4 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |                Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  U_Fnd_Controller/U_Clk_Div_1000Hz/tick_1000Hz |                                            | rst_IBUF                               |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                 | U_Fnd_Controller/U_Clk_Div_1000Hz/rst      |                                        |                4 |              4 |         1.00 |
+|  U_Time_Counter/U_Counter_Min/CLK              |                                            | rst_IBUF                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                 | U_Control_Unit/FSM_onehot_state[4]_i_1_n_0 | rst_IBUF                               |                2 |              5 |         2.50 |
+|  U_Debounce_clear/r_debounce_clk_reg_n_0       |                                            | rst_IBUF                               |                1 |              5 |         5.00 |
+|  U_Debounce_mode/r_debounce_clk_reg_n_0        |                                            | rst_IBUF                               |                2 |              5 |         2.50 |
+|  U_Debounce_run_stop/r_debounce_clk            |                                            | rst_IBUF                               |                2 |              5 |         2.50 |
+|  U_Time_Counter/U_Counter_Msec/CLK             |                                            | rst_IBUF                               |                2 |              7 |         3.50 |
+|  U_Time_Counter/U_Counter_Sec/tick_min_reg_0   |                                            | rst_IBUF                               |                2 |              7 |         3.50 |
+|  U_Time_Counter/U_Tick_Msec/tick_msec_reg_0    |                                            | rst_IBUF                               |                2 |              8 |         4.00 |
+|  U_Stop_Watch/U_Clk_Div_10Hz/CLK               | U_Control_Unit/E[0]                        | U_Debounce_mode/r_debounce_reg[3]_0[0] |                2 |             13 |         6.50 |
+|  clk_IBUF_BUFG                                 |                                            | rst_IBUF                               |               28 |            115 |         4.11 |
++------------------------------------------------+--------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+
